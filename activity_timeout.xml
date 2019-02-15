@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/timeOut"
+        android:layout_width="386dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="12sp"
+        android:text="@string/time_s_up"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/goalText"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeOut"
+        android:layout_marginTop="21dp"
+        android:lineSpacingExtra="24sp"
+        android:text="@string/goal"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/goalTime"
+        android:layout_width="370dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/goalText"
+        android:layout_marginTop="4dp"
+        android:text="@string/_5_min"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/timeSpentText"
+        android:layout_width="379dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/goalTime"
+        android:layout_marginTop="47dp"
+        android:text="@string/time_spent_today"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/timeSpent"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeSpentText"
+        android:layout_marginTop="7dp"
+        android:text="@string/_2_min"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/curAppText"
+        android:layout_width="395dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/timeSpent"
+        android:layout_marginTop="51dp"
+        android:text="@string/current_app"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/curApp"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/curAppText"
+        android:layout_marginTop="1dp"
+        android:text="@string/snapchat"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/moreTimeButton"
+        android:layout_width="377dp"
+        android:layout_height="69dp"
+        android:layout_below="@id/curApp"
+        android:layout_marginTop="84dp"
+        android:text="@string/need_more_time" />
+
+</RelativeLayout>
